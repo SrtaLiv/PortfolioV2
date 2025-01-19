@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <span className="text-xl font-bold text-indigo-600">AT</span>
+            <span className="text-xl font-bold text-indigo-600">OT</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -20,7 +20,7 @@ const Navbar = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
-                className="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-white-text px-3 py-2 text-sm font-medium transition-colors"
               >
                 {item}
               </a>

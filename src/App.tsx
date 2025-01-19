@@ -1,25 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Technologies from './components/Technologies';
-import YouTube from './components/YouTube';
+import Home from './pages/Home';
+import ProjectDetail from './pages/ProjectDetail';
 import Footer from './components/Footer';
 
 function App() {
   return (
+    <Router>
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Technologies />
-        <YouTube />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<ProjectDetail />} />
+      </Routes>
       <Footer />
     </div>
+  </Router>
   );
 }
 
