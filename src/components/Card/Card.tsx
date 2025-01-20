@@ -39,7 +39,7 @@ const Card: React.FC<CardProps> = ({ title, description, technologies, services,
                         </svg>
                     </div>
                 </div>
-
+                {/* <h3 className='flex flex-wrap w-full'>{description}</h3> */}
                 <div className="types">
                     {services.map((service) => (
                         <span

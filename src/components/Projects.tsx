@@ -47,17 +47,17 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 bg-black-primary md:h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-5xl font-extrabold text-green-text transition-colors duration-300 my-12">
+        <h2 className="text-5xl font-extrabold text-white transition-colors duration-300 my-12">
           Proyectos.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <Link
-              to={`/project/${project.id ?? index + 1}`}
-              className="flex items-center ml-auto text-indigo-600 hover:text-indigo-700 font-medium"
+              key={project.id}
+              to={`/project/${project.id}`}
+              className="flex flex-col "
             >
               <Card
-                key={project.id}
                 title={project.title}
                 description={project.description}
                 technologies={project.technologies}
