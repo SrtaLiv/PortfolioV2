@@ -30,15 +30,15 @@ const technologies = {
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="py-20 bg-green-secondary">
+    <section id="technologies" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-poppins font-extrabold text-white  transition-colors duration-300">
+        {/* <h2 className="text-4xl font-poppins font-extrabold text-white  transition-colors duration-300">
           Tecnologias
-        </h2>
+        </h2> */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {Object.entries(technologies).map(([category, techs]) => (
             <div key={category} className="space-y-6">
-              <h3 className="text-xl font-bold text-white text-center mb-6">
+              <h3 className="text-xl font-bold text-black text-center mb-6">
                 {category}
               </h3>
               <div className="grid grid-cols-2 gap-4">

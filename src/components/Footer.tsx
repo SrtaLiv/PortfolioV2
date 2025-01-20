@@ -1,20 +1,25 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-gray-900 text-white py-12">
+    <footer id="contact" className=" bg-black text-white flex items-center justify-center h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold mb-4">Let's Connect</h2>
-          <p className="text-gray-400">
-            Feel free to reach out for collaborations or just a friendly chat
-          </p>
+          <h2 className="text-2xl font-bold mb-4">
+            <a
+              href="mailto:anaoliviatodesco@gmail.com"
+              className="text-xl sm:text-3xl md:text-5xl text-gray-400 hover:text-white transition-colors"
+            >
+              anaoliviatodesco@gmail.com
+            </a>
+
+          </h2>
         </div>
-        
+
         <div className="flex justify-center space-x-6 mb-8">
           <a
-            href="https://github.com"
+            href="https://github.com/SrtaLiv"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
@@ -22,7 +27,7 @@ const Footer = () => {
             <Github size={24} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/anaoliviatodesco/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
@@ -30,23 +35,18 @@ const Footer = () => {
             <Linkedin size={24} />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://www.instagram.com/oliviatodesco/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
           >
-            <Twitter size={24} />
+            <Instagram size={24} />
           </a>
-          <a
-            href="mailto:contact@example.com"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <Mail size={24} />
-          </a>
+
         </div>
-        
+
         <div className="text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Ana Olivia Todesco. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Ana Olivia Todesco.</p>
         </div>
       </div>
     </footer>

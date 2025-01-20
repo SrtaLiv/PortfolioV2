@@ -1,30 +1,45 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Download, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ['Home', 'About Me', 'Projects', 'Technologies', 'Contact'];
+  const navItems = ['Inicio', 'Sobre mi', 'Proyectos', ' Contacto'];
 
   return (
-    <nav className="fixed w-full bg-green-primary shadow-sm z-50">
+    <nav className="fixed w-full bg-white shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <span className="text-xl font-bold text-indigo-600">OT</span>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
-                className="text-gray-700 hover:text-white-text px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-white-text px-3 py-2 text-sm font-medium transition-colors font-poppins"
               >
                 {item}
               </a>
             ))}
+            {/* <a
+              href=""
+              className="flex items-center gap-2 bg-green-secondary text-white px-4 py-2 rounded-md hover:bg-green-500 transition duration-200"
+              aria-label="Descargar CV"
+            >
+              <span>Curriculum</span>
+            </a> */}
+            <a
+              href="dist/assets/cv/CV Ana Olivia Todesco - Full Stack Developer 2025.pdf"  // Reemplaza esto con la ruta de tu archivo
+              className="flex items-center gap-2 bg-green-secondary text-white px-4 py-2 rounded-md hover:bg-green-500 transition duration-200"
+              aria-label="Descargar CV"
+              download="CV Ana Olivia Todesco - Full Stack Developer"  // Este es el nombre por defecto con el que se descargará el archivo
+            >
+              <span>Curriculum</span>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -53,7 +68,15 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
+            <a
+              href=""
+              className="flex items-center gap-2 bg-green-secondary text-white px-4 py-2 rounded-md hover:bg-green-500 transition duration-200"
+              aria-label="Descargar CV"
+            >
+              <span>Curriculum</span>
+            </a>
           </div>
+
         </div>
       )}
     </nav>

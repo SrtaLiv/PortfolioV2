@@ -61,6 +61,8 @@
     @apply border-border;
   }
   body {
+    font-family: poppins; 
     @apply bg-background text-foreground;
   }
 }
+

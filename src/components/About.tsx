@@ -1,11 +1,12 @@
 import React from 'react';
+import Technologies from './Technologies';
 
 const About = () => {
   return (
-    <section id="about-me" className="py-20 bg-green-primary">
+    <section id="about-me" className="md:h-screen py-20 mb-6 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-poppins font-extrabold text-green-text  transition-colors duration-300">
-          Sobre mi
+        <h2 className="text-5xl mb-4 font-poppins font-extrabold text-green-text  transition-colors duration-300">
+          Sobre mi.
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
 
@@ -30,6 +31,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Technologies />
     </section>
   );
 };
