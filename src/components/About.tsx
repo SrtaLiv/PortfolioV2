@@ -9,8 +9,6 @@ const About = () => {
           Sobre mi.
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
-
-
           <div className="md:w-1/2 border-2 border-green-text rounded-lg relative overflow-hidden">
             <img
               src="dist/assets/WhatsApp Image 2024-02-22 at 16.03.47.jpeg"
@@ -31,7 +29,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <section id="technologies" className="my-2">
+      <section id="technologies" className="my-2 py-16">
         <Technologies />
       </section>
     </section>

@@ -3,13 +3,13 @@ import { Github, Linkedin, Twitter, Mail, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contact" className=" bg-black text-white flex items-center justify-center h-screen">
+    <footer id="contact" className=" bg-white-text text-white flex items-center justify-center py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold mb-4">
             <a
               href="mailto:anaoliviatodesco@gmail.com"
-              className="text-xl sm:text-3xl md:text-5xl text-gray-400 hover:text-white transition-colors"
+              className="email text-3sm md:text-5xl text-green-text"
             >
               anaoliviatodesco@gmail.com
             </a>
@@ -22,7 +22,7 @@ const Footer = () => {
             href="https://github.com/SrtaLiv"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-green-primary hover:text-green-text transition-colors"
           >
             <Github size={24} />
           </a>
@@ -30,7 +30,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/anaoliviatodesco/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-green-primary hover:text-green-text transition-colors"
           >
             <Linkedin size={24} />
           </a>
@@ -38,14 +38,14 @@ const Footer = () => {
             href="https://www.instagram.com/oliviatodesco/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-green-primary hover:text-green-text transition-colors"
           >
             <Instagram size={24} />
           </a>
 
         </div>
 
-        <div className="text-center text-gray-400 text-sm">
+        <div className="text-center text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} Ana Olivia Todesco.</p>
         </div>
       </div>

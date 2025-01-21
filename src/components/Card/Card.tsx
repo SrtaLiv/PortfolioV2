@@ -43,8 +43,8 @@ const Card: React.FC<CardProps> = ({ title, description, technologies, services,
                 <div className="types">
                     {services.map((service) => (
                         <span
-                            style={{ backgroundColor: 'rgba(165, 96, 247, 0.43)', color: 'rgb(85, 27, 177)' }}
-                            className="project-type"
+                            // style={{ backgroundColor: 'green', color: 'white' }}
+                            className="project-type bg-green-primary text-green-950"
                         >
                             {service}
                         </span>

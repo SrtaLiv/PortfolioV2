@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -29,6 +30,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -56,13 +58,43 @@
     --chart-5: 340 75% 55%
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    font-family: poppins; 
+    font-family: poppins;
     @apply bg-background text-foreground;
   }
 }
 
+.email {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.email::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  /* Grosor de la línea */
+  background-color: #A3B18A;
+  /* Color de la línea */
+  transition: width 0.3s ease-in-out;
+  /* Efecto de animación */
+}
+
+.email:hover::after {
+  width: 100%;
+  /* La línea cubre todo el ancho del texto */
+}
+
+/* .container-model {
+  margin-left: -40px;
+} */

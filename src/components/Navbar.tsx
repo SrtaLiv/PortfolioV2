@@ -1,17 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Download, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const navItems = ['Inicio', 'Sobre mi', 'Proyectos', ' Contacto'];
 
   return (
-    <nav className="fixed w-full bg-white shadow-sm z-50">
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        }`}
+    >
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <span className="text-xl font-bold text-indigo-600">OT</span>
+            <span className="text-xl font-bold text-indigo-600">Olivia T.</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className=" overflow-hidden px-12 min-h-screen flex flex-col md:flex-row items-center justify-center bg-white-text from-indigo-50 via-white to-purple-50 pt-16"
+      className="overflow-hidden px-12 min-h-screen flex flex-col md:flex-row items-center justify-center bg-white-text from-indigo-50 via-white to-purple-50 pt-16"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left md:w-1/2">
         <h1 className="text-5xl md:text-8xl md:text-wrap sm:text
@@ -47,18 +47,18 @@ const Hero = () => {
         </div>
 
       </div>
-      <div className='overflow-x-hidden'>
+      <div className='md:container-model overflow-x-hidden'>
         <model-viewer
-          className="overflow-x-hidden z-20"
+          className="z-20"
           src="/dist/assets/model/source/retro_computer_minecraft.glb"
           alt="compaq"
           auto-rotate
           camera-controls
           auto-rotate-delay="0"
-          camera-orbit="-90deg 0 0"
+          camera-orbit="-180deg 0 0"
           interaction-prompt="none"
           disable-zoom
-          style={{ width: '500px', height: '500px' }}
+          style={{ width: '600px', height: '600px' }}
         >
         </model-viewer>
 

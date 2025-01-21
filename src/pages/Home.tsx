@@ -10,9 +10,7 @@ const Home = () => {
     <main>
       <Hero />
       <About />
-      {/* <Technologies /> */}
       <Projects />
-      {/* <YouTube /> */}
     </main>
   );
 };
