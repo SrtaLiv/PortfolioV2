@@ -1,9 +1,8 @@
 import React from 'react';
-import Card from './Card/Card';
 import { Link } from 'react-router';
 import { ArrowRight } from 'lucide-react';
 import Technologies from './Technologies';
-
+import Card from './Card/Card';
 const projects = [
   {
     id: 1,
@@ -45,7 +44,7 @@ const projects = [
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-20 bg-black-primary md:h-screen">
+    <section id="projects" className="py-20 bg-black-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-extrabold text-white transition-colors duration-300 my-12">
           Proyectos.
@@ -67,6 +66,20 @@ const Projects: React.FC = () => {
               />
             </Link>
           ))}
+        </div>
+        <div className="mt-20 overflow-hidden relative">
+          <div className="flex animate-scroll">
+            <div className="flex min-w-full">
+              {projects.concat(projects).map((project, index) => (
+                <img
+                  key={`${project.id}-${index}`}
+                  src={project.image}
+                  alt={project.title}
+                  className="w-[300px] h-[200px] object-cover rounded-lg mx-4"
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

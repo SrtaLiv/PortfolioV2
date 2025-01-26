@@ -13,20 +13,27 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, technologies, services, image, link }) => {
     return (
-        <article className="article-wrapper">
-            <div className="card rounded-lg container-project">
-                <img src={image} alt="" />
-            </div>
-            <div className="project-info">
+        <article 
+            className="article-wrapper"
+            style={{
+                backgroundImage: `url(${image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}
+        >
+            {/* Overlay oscuro para mejorar la legibilidad */}
+            <div className="absolute inset-0 bg-black/30"></div>
+            
+            <div className="project-info relative z-10">
                 <div className="flex-pr">
-                    <div className="project-title text-nowrap">{title}</div>
+                    <div className="project-title text-nowrap text-white">{title}</div>
                     <div className="project-hover">
                         <svg
-                            style={{ color: 'black' }}
+                            style={{ color: 'white' }}
                             xmlns="http://www.w3.org/2000/svg"
                             width="2em"
                             height="2em"
-                            color="black"
+                            color="white"
                             strokeLinejoin="round"
                             strokeLinecap="round"
                             viewBox="0 0 24 24"
@@ -41,15 +48,14 @@ const Card: React.FC<CardProps> = ({ title, description, technologies, services,
                 </div>
                 {/* <h3 className='flex flex-wrap w-full'>{description}</h3> */}
                 <div className="types">
-                    {services.map((service) => (
-                        <span
-                            // style={{ backgroundColor: 'green', color: 'white' }}
+                    {services.map((service, index) => (
+                        <span 
+                            key={index}
                             className="project-type bg-green-primary text-green-950"
                         >
                             {service}
                         </span>
                     ))}
-
                 </div>
             </div>
         </article>
