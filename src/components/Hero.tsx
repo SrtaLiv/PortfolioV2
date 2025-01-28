@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="overflow-hidden px-12 min-h-screen flex flex-col md:flex-row items-center justify-center bg-white-text from-indigo-50 via-white to-purple-50 pt-16"
+      className="overflow-hidden sm:px-6 lg:px-8 min-h-screen flex flex-col md:flex-row items-center  bg-white-text from-indigo-50 via-white to-purple-50 pt-16"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left md:w-1/2">
+      <div className="max-w-7xl mx-auto text-center md:text-left md:w-1/2">
         <h1 className="text-5xl md:text-8xl md:text-wrap sm:text
          text-green-text mb-4">
           Hola, mi nombre es <span className="font-bold">Olivia.</span>
@@ -61,9 +61,6 @@ const Hero = () => {
           style={{ width: '600px', height: '600px' }}
         >
         </model-viewer>
-
-
-
       </div>
     </section >
   );

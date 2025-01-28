@@ -21,7 +21,6 @@ const Card: React.FC<CardProps> = ({ title, description, technologies, services,
                 backgroundPosition: 'center',
             }}
         >
-            {/* Overlay oscuro para mejorar la legibilidad */}
             <div className="absolute inset-0 bg-black/30"></div>
             
             <div className="project-info relative z-10">
@@ -46,7 +45,6 @@ const Card: React.FC<CardProps> = ({ title, description, technologies, services,
                         </svg>
                     </div>
                 </div>
-                {/* <h3 className='flex flex-wrap w-full'>{description}</h3> */}
                 <div className="types">
                     {services.map((service, index) => (
                         <span 
