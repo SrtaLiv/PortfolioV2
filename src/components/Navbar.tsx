@@ -29,10 +29,10 @@ const Navbar = () => {
   const handleNavClick = async (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     
-    if (window.location.pathname !== '/') {
-      window.location.href = `/#${id}`;
-      return;
-    }
+    // if (window.location.pathname !== '/') {
+    //   window.location.href = `/#${id}`;
+    //   return;
+    // }
 
     const element = document.getElementById(id);
     if (element) {
