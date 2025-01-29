@@ -33,11 +33,7 @@ export const projects: Project[] = [
     longDescription: "SaveFood es una aplicación que permite a los usuarios registrar, gestionar y controlar sus comidas, ayudando a mantener un seguimiento saludable de su nutrición.",
     technologies: ["Angular", "SpringBoot", "Java", "TailwindCSS", "Docker"],
     services: ['Web', 'UX/UI'],
-<<<<<<< HEAD
-    images: ["./dist/assets/projects/savefood.png",],
-=======
     images: ["/projects/savefood.png",],
->>>>>>> 2fd3c8848fd5478b7ab4640aa0b6001ec1669897
     videos: [''],
     githubUrl: "https://github.com/SrtaLiv/SaveFood-Backend",
     liveUrl: "#",
@@ -61,13 +57,8 @@ export const projects: Project[] = [
     longDescription: 'Nebula es una plataforma para descubrir y compartir noticias relacionadas con la tecnología, con un enfoque en innovación y tendencias actuales.',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'TailwindCSS', 'Docker'],
     services: ['Web', 'UX/UI'],
-<<<<<<< HEAD
-    images: ['/dist/assets/projects/PreviewNebula.PNG',
-      '../dist/assets/projects/Services.PNG',
-=======
-    images: ['/projects/PreviewNebula.PNG',
-      '/projects/Services.PNG',
->>>>>>> 2fd3c8848fd5478b7ab4640aa0b6001ec1669897
+    images: ['/projects/PreviewNebula.png',
+      '/projects/Services.png',
     ],
     videos: [''],
     githubUrl: 'https://github.com/SrtaLiv/Nebula',
@@ -92,15 +83,9 @@ export const projects: Project[] = [
     longDescription: 'NutriBalance es una solución digital diseñada para ayudar a los usuarios a acceder fácilmente a servicios de nutrición, con información clara sobre planes, ubicaciones y servicios disponibles.',
     technologies: ['Next.js 14', 'NextUI v2', 'Tailwind CSS', 'Tailwind Variants', 'TypeScript', 'Framer Motion', 'next-themes'],
     services: ['Web', 'UX/UI'],
-<<<<<<< HEAD
-    images: ['./dist/assets/projects/pcc.png','../dist/assets/projects/contact preview.PNG'
-    ],
-    videos: ['./assets/videos/show project.mp4',
-=======
     images: ['/projects/pcc.png','/projects/contact preview.PNG'
     ],
     videos: ['/videos/show project.mp4',
->>>>>>> 2fd3c8848fd5478b7ab4640aa0b6001ec1669897
     ],
     githubUrl: 'https://github.com/SrtaLiv/Consultorio-Nutricionista-v2',
     liveUrl: 'https://nutribalanceapp.netlify.app/',
