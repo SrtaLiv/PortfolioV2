@@ -20,7 +20,7 @@ const About = () => {
           </div>
           <div className="md:w-1/2 border-2 border-green-text rounded-lg relative overflow-hidden">
             <img
-              src="dist/assets/WhatsApp Image 2024-02-22 at 16.03.47.jpeg"
+              src="/WhatsApp Image 2024-02-22 at 16.03.47.jpeg"
               alt="Developer working"
               className="rounded-lg shadow-lg h-96 w-full object-cover"
             />
