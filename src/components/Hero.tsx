@@ -50,7 +50,7 @@ const Hero = () => {
       <div className='md:container-model overflow-x-hidden'>
         <model-viewer
           className="z-20"
-          src="/dist/assets/model/source/retro_computer_minecraft.glb"
+          src="/model/source/retro_computer_minecraft.glb"
           alt="compaq"
           auto-rotate
           camera-controls
