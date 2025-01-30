@@ -10,7 +10,9 @@ const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const project = projects.find(p => p.id === id);
 
-  if (!project) {
+  // let params = useParams();https://reactrouter.com/start/library/routing
+  
+  if (!project) { 
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">

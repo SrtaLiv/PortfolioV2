@@ -10,7 +10,8 @@ export const projects: Project[] = [
     technologies: ['React', 'Java', 'React', 'SpringBoot', 'TailwindCSS', 'Docker'],
     services: ['Web', 'UX/UI'],
     images: ['https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1600',],
-    videos: [''],
+    videos: ['/videos/linkshare.mp4',
+    ],
     githubUrl: 'https://github.com/SrtaLiv/LinkShare',
     liveUrl: '#',
     features: [
@@ -105,7 +106,7 @@ export const projects: Project[] = [
   {
     id: '5',
     title: 'Mi Personaje 3D',
-    description: 'Una plataforma que conecta a las personas con servicios nutricionales personalizados, promoviendo hábitos saludables y bienestar.',
+    description: 'Mi propio personaje 3D con animaciones creado con React Three Fiber y Blender.',
     longDescription: 'Este proyecto me permitio adquirir conocimientos en la creación de personajes 3D, utilizando tecnologías como React Three Fiber y Blender.',
     technologies: ['React-Three-Fiber', 'Vimeo', 'Vite', 'Blender'],
     services: ['Web', '3D'],

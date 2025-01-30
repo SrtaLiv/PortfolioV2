@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Download, Menu, X } from 'lucide-react';
 import DownloadButton from './Curriculum/Download';
-import { Link } from 'react-router';
+import { Link, NavLink, useNavigate } from 'react-router';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,22 +29,22 @@ const Navbar = () => {
     { name: 'Contacto', id: 'contact' }
   ];
 
+  //Cambiar de pagina y scrollear hasta la seccion correspondiente
   const handleNavClick = async (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false);
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   };
-
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
         }`}
     >
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -52,67 +53,62 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            {/* <Link to="/">Inicio</Link> */}
+
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.name}
                 to={`#${item.id}`}
+                className="text-gray-700 hover:text-green-secondary px-3 py-2 text-sm font-medium transition-colors font-poppins"
                 onClick={(e) => handleNavClick(e, item.id)}
-                className="text-gray-700 hover:text-green-secondary px-3 py-2 text-sm font-medium transition-colors font-poppins">
-                  {item.name}
-              </Link>
-              // <a
-              //   key={item.name}
-              //   href={`#${item.id}`}
-              //   onClick={(e) => handleNavClick(e, item.id)}
-              //   className="text-gray-700 hover:text-green-secondary px-3 py-2 text-sm font-medium transition-colors font-poppins"
-              // >
-              //   {item.name}
-              // </a>
+              >
+                {item.name}
+              </NavLink>
             ))}
 
-        <DownloadButton fileUrl="/cv/CV Ana Olivia Todesco - Full Stack Developer 2025.pdf" fileName="CV Ana Olivia Todesco - Full Stack Developer 2025.pdf" />
-      </div>
+            <DownloadButton fileUrl="/cv/CV Ana Olivia Todesco - Full Stack Developer 2025.pdf" fileName="CV Ana Olivia Todesco - Full Stack Developer 2025.pdf" />
+          </div>
 
-      {/* Mobile menu button */}
-      <div className="md:hidden flex items-center">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="text-gray-700 hover:text-indigo-600"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-    </div>
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700 hover:text-indigo-600"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
       </div >
 
-  {/* Mobile Navigation */ }
-{
-  isOpen && (
-    <div className="md:hidden">
-      <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
-        {navItems.map((item) => (
-          <a
-            key={item.name}
-            href={`#${item.id}`}
-            onClick={(e) => handleNavClick(e, item.id)}
-            className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50"
-          >
-            {item.name}
-          </a>
-        ))}
+      {/* Mobile Navigation */}
+      {
+        isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={`#${item.id}`}
+                  onClick={(e) => handleNavClick(e, item.id)}
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50"
+                >
+                  {item.name}
+                </a>
+              ))}
 
-        <a
-          href=""
-          className="flex items-center gap-2 bg-green-secondary text-white px-4 py-2 rounded-md hover:bg-green-500 transition duration-200"
-          aria-label="Descargar CV"
-        >
-          <span>Curriculum</span>
-        </a>
-      </div>
+              <a
+                href=""
+                className="flex items-center gap-2 bg-green-secondary text-white px-4 py-2 rounded-md hover:bg-green-500 transition duration-200"
+                aria-label="Descargar CV"
+              >
+                <span>Curriculum</span>
+              </a>
+            </div>
 
-    </div>
-  )
-}
+          </div>
+        )
+      }
     </nav >
   );
 };
