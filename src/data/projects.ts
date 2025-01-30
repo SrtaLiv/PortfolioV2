@@ -54,9 +54,9 @@ export const projects: Project[] = [
   {
     id: '3',
     title: 'Nebula',
-    description: 'A platform that brings together the latest news in technology and innovation, providing users with insightful articles and discussions.',
-    longDescription: 'Nebula es una plataforma para descubrir y compartir noticias relacionadas con la tecnología, con un enfoque en innovación y tendencias actuales.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'TailwindCSS', 'Docker'],
+    description: 'Sitio para startup tecnologica, desarrollo de software.',
+    longDescription: 'Nebula es una plataforma para ofrecer servicios de desarrollo de software y asesoramiento en tecnología. El objetivo es ayudar a las empresas a alcanzar sus objetivos tecnológicos.',
+    technologies: ['React', 'Node.js', 'Express', 'TailwindCSS', 'Docker'],
     services: ['Web', 'UX/UI'],
     images: ['/projects/PreviewNebula.png',
       '/projects/Services.png',
