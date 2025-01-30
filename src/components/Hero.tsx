@@ -4,9 +4,9 @@ import { Github, LinkedinIcon, Download } from 'lucide-react';
 import SplitText from '../animate/SplitText';
 import TiltedCard from '../animate/TiltedCard';
 import TextPressure from '../animate/Hello';
+import DownloadButton from './Curriculum/Download';
 
 const Hero = () => {
-
   const handleAnimationComplete = () => {
     console.log('All letters have animated!');
   };
@@ -41,12 +41,6 @@ const Hero = () => {
           rootMargin="-50px"
           onLetterAnimationComplete={handleAnimationComplete}
         />
-
-
-        {/* <h1 className="text-5xl md:text-8xl md:text-wrap sm:text
-         text-green-text mb-4">
-          Hola, mi nombre es <span className="font-bold">Olivia.</span>
-        </h1> */}
         <p className="text-xl text-green-text max-w-2xl mx-auto md:mx-0 mb-12">
           Apasionada por el desarrollo web y comprometida con el aprendizaje constante.
         </p>
@@ -70,14 +64,8 @@ const Hero = () => {
           >
             <LinkedinIcon />
           </a>
-          <a
-            href=""
-            className="flex items-center gap-2 bg-green-secondary text-white px-4 py-2 rounded-md hover:bg-green-500 transition duration-200"
-            aria-label="Descargar CV"
-          >
-            <Download />
-            <span>Curriculum</span>
-          </a>
+          
+          <DownloadButton fileUrl="/cv/CV Ana Olivia Todesco - Full Stack Developer 2025.pdf" fileName="CV Ana Olivia Todesco - Full Stack Developer 2025.pdf" />
         </div>
 
       </div>

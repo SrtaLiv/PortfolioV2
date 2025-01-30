@@ -1,6 +1,7 @@
 import React from 'react';
 import Technologies from './Technologies';
 import AnimatedContent from '../animate/Animate';
+import transitionPageVariants from '../animate/TransitionPage';
 
 const About = () => {
   return (
@@ -60,3 +61,4 @@ const About = () => {
 };
 
 export default About;
+// export default transitionPageVariants(About);
