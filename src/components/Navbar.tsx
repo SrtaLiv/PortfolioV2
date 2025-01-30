@@ -42,7 +42,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+      className={`fixed w-full overflow-hidden  z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,8 +53,6 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* <Link to="/">Inicio</Link> */}
-
             {navItems.map((item) => (
               <NavLink
                 key={item.name}
@@ -84,7 +82,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {
         isOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
               {navItems.map((item) => (
                 <a

@@ -21,7 +21,6 @@ const About = () => {
             Sobre mi.
           </h2>
           <div className="flex flex-col md:flex-row items-center gap-12">
-
             <div className="md:w-1/2 space-y-6">
               <p className="text-lg text-green-text font-poppins">
                 Mi nombre es Ana Olivia Todesco, soy de Argentina y me especializo en
@@ -32,7 +31,7 @@ const About = () => {
             </div>
             <div className="md:w-1/2 border-2 border-green-text rounded-lg relative overflow-hidden">
               <img
-                src="/WhatsApp Image 2024-02-22 at 16.03.47.jpeg"
+                src="/others/me.jpg"
                 alt="Developer working"
                 className="rounded-lg shadow-lg h-96 w-full object-cover"
               />
@@ -61,4 +60,3 @@ const About = () => {
 };
 
 export default About;
-// export default transitionPageVariants(About);

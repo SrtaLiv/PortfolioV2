@@ -14,7 +14,7 @@ const technologies = {
     { name: 'Java', icon: '/icons/java.png' },
     { name: 'Spring Boot', icon: '/icons/springboot.png' },
     { name: 'MySQL', icon: '/icons/mysql.png' },
-    { name: 'PostgreSQL', icon: '/icons/postgresql.png' },
+    { name: 'PostgreSQL', icon: '/icons/PostgreSQL.png' },
     { name: 'Oracle', icon: '/icons/oracle.png' },
   ],
   OTROS: [

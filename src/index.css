@@ -119,3 +119,10 @@
   background: #0f0f0f;
   transform-origin: top;
 }
+
+/* 957 px card project*/
+@media (max-width: 957px) {
+  .card {
+    width: 100%;
+  }
+}

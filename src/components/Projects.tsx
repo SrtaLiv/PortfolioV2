@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
         <h2 className="text-5xl font-extrabold text-white transition-colors duration-300 my-12">
           Proyectos.
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
           {projects.map((project) => (
             <Link
               key={project.id}
