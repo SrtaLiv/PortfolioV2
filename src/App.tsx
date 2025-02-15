@@ -22,7 +22,7 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       {loading && (
         <div className="loader-container">
-          <h1>cargando</h1>
+          <h1>Cargando Test</h1>
         </div>
       )}
       {!loading && (
