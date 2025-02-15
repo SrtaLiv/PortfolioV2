@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '@google/model-viewer';
-import { Github, LinkedinIcon, Download } from 'lucide-react';
+import { Github, LinkedinIcon } from 'lucide-react';
 import SplitText from '../animate/SplitText';
-import TiltedCard from '../animate/TiltedCard';
-import TextPressure from '../animate/Hello';
 import DownloadButton from './Curriculum/Download';
 
 const Hero = () => {

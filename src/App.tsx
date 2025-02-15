@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
 import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
-import Loader from 'react-loaders'
+import Loader from './animate/UseDecryptedText';
 
 function App() {
   // Por defecto el loading se muestra
@@ -15,15 +15,13 @@ function App() {
     // Simulamos una carga de datos, luego desactivamos el loader
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1800);
   }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
       {loading && (
-        <div className="loader-container">
-          <h1>Cargando Test</h1>
-        </div>
+          <Loader/>
       )}
       {!loading && (
         <>

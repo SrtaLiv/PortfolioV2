@@ -1,11 +1,10 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail, Instagram } from 'lucide-react';
-
+import { Github, Linkedin, Instagram } from 'lucide-react';
 import AnimatedContent from '../animate/Animate';
+
 const Footer = () => {
   return (
     <footer id="contact" className=" bg-white-text text-white flex items-center justify-center py-32">
-
       <AnimatedContent
         distance={150}
         direction="vertical"
