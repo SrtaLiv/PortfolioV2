@@ -1,7 +1,8 @@
 import React from 'react';
 import Technologies from './Technologies';
 import AnimatedContent from '../animate/Animate';
-import transitionPageVariants from '../animate/TransitionPage';
+
+// I need a feacture for a links ptionals 
 
 const About = () => {
   return (
@@ -23,10 +24,12 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2 space-y-6">
               <p className="text-lg text-green-text font-poppins">
-                Mi nombre es Ana Olivia Todesco, soy de Argentina y me especializo en
-                <span className='font-bold'> Desarrollo Web</span>. Me apasiona la tecnología y la programación, y disfruto de aprender cosas nuevas cada día.    </p>
+                ¡Hola! Soy Ana Olivia Todesco,  una apasionada <span className='font-bold'> desarrolladora web</span> de Argentina. Desde que descubrí el mundo de la tecnología y la programación, supe que había encontrado mi lugar</p>
               <p className="font-poppins text-lg text-green-text">
-                Actualmente, estudio una Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas para continuar mi formación. En cada desafío doy lo mejor de mí y busco crecer como profesional en este ámbito. Además de estudiar, creo contenido en Instagram, donde recomiendo recursos para programadores y diseñadores.
+                Actualmente, estoy finalizando una<span className='font-bold'>  Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas</span>  un paso más en mi camino para convertirme en una profesional sólida y versátil.
+              </p>
+              <p className="font-poppins text-lg text-green-text">
+                Si hay algo que me define, es mi entusiasmo por conectar, crear y contribuir. Siempre estoy lista para asumir nuevos retos, aprender de los demás y, sobre todo, disfrutar del proceso. 🚀✨
               </p>
             </div>
             <div className="md:w-1/2 border-2 border-green-text rounded-lg relative overflow-hidden">

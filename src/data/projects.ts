@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: 'Nebula',
     description: 'Sitio para startup tecnologica, desarrollo de software.',
     longDescription: 'Nebula es una plataforma para ofrecer servicios de desarrollo de software y asesoramiento en tecnología. El objetivo es ayudar a las empresas a alcanzar sus objetivos tecnológicos.',
-    technologies: ['React', 'Node.js', 'Express', 'TailwindCSS', 'Docker'],
+    technologies: ['React', 'TailwindCSS'],
     services: ['Web', 'UX/UI'],
     images: ['/projects/PreviewNebula.png',
       '/projects/Services.png',
@@ -79,12 +79,12 @@ export const projects: Project[] = [
   },
   {
     id: '4',
-    title: 'Landing PageNutricionista',
-    description: 'Una plataforma que conecta a las personas con servicios nutricionales personalizados, promoviendo hábitos saludables y bienestar.',
+    title: 'Landing Page Nutricionista',
+    description: 'Una sitio que conecta a las personas con servicios nutricionales personalizados, promoviendo hábitos saludables y bienestar.',
     longDescription: 'NutriBalance es una solución digital diseñada para ayudar a los usuarios a acceder fácilmente a servicios de nutrición, con información clara sobre planes, ubicaciones y servicios disponibles.',
-    technologies: ['Next.js 14', 'NextUI v2', 'Tailwind CSS', 'Tailwind Variants', 'TypeScript', 'Framer Motion', 'next-themes'],
+    technologies: ['Next.js 14', 'NextUI v2', 'Tailwind CSS', 'TypeScript'],
     services: ['Web', 'UX/UI'],
-    images: ['/projects/pcc.png','/projects/contact preview.PNG'
+    images: ['/projects/pcc.png','/projects/contact preview.png'
     ],
     videos: ['/videos/show project.mp4',
     ],
