@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="overflow-hidden sm:px-6 md:px-6 lg:px-80 min-h-screen flex flex-col md:flex-row items-center  bg-white-text from-indigo-50 via-white to-purple-50 pt-16"
+      className="overflow-hidden sm:px-6 md:px-6 lg:px-56 xl:px-64 min-h-screen flex flex-col md:flex-row items-center  bg-white-text from-indigo-50 via-white to-purple-50 pt-16"
     >
       <div className="max-w-6xl mx-auto mt-4 text-center md:text-left md:w-1/2">
         <SplitText
