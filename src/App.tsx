@@ -7,18 +7,19 @@ import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
 import InstallModal from './animate/TransitionPage';
 import About from './components/About';
+import MotionComponent from './pages/Motion';
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      {/* <Navbar /> */}
       <AnimatePresence>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/motion" element={<MotionComponent />} />
         </Routes>
-
-        <Footer />
+        {/* <Footer /> */}
       </AnimatePresence>
     </div>
   );
